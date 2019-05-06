@@ -3,13 +3,8 @@
 
 <head>
     <link rel="icon" href="imgs/icon.jpg">;
-    <title>Guy and Jonathan's Pacman</title>
-
 
     <style>
-        #icon{
-    width: 70px ;
-    height: 70px ;
     }
         
         #header
@@ -1009,7 +1004,7 @@
 
             //Starting song
             song = new setBackgroundSong(song_src);
-            //song.start();
+            song.start();
 
             //If food still remains
             if (food_remain > 0) {
@@ -1543,7 +1538,7 @@
                         window.alert("We have a Winner!!!");
                     }
                 }
-                //song.stop();
+                song.stop();
             }
             else
             {
