@@ -833,7 +833,7 @@
         var fifty_pointer_is_alive;//True iff the fifty pointer is in the game
         var num_of_rows;//The number of rows in the board
         var num_of_cols;//The number of columns in the board
-        var song_src;//The src of the background song
+        var song_src;//The src of the background
         var time_limit;//The time limit of the game
         var up_key;//The "up" key
         var down_key;//The "down" key
@@ -850,13 +850,13 @@
         var invincivle;
         var in_time;
         var song;
-        var ifSong=false;
+        var ifSong;
 
 
         //This function will start the game
         //It will initialize all the variables and set the interval
         function Start() {
-
+            ifSong=false;
             shape = new Object();
             fifty_pointer_loc = new Object();
             if(typeof interval!== 'undefined')
