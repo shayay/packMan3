@@ -850,6 +850,7 @@
         var invincivle;
         var in_time;
         var song;
+        var ifSong=false;
 
 
         //This function will start the game
@@ -1004,8 +1005,10 @@
 
             //Starting song
             song = new setBackgroundSong(song_src);
+            if(!ifSong){
+            ifSong=true;
             song.start();
-
+        }
             //If food still remains
             if (food_remain > 0) {
 
@@ -1538,6 +1541,7 @@
                         window.alert("We have a Winner!!!");
                     }
                 }
+                ifSong=false;
                 song.stop();
             }
             else
