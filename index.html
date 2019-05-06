@@ -850,13 +850,12 @@
         var invincivle;
         var in_time;
         var song;
-        var ifSong;
+        var ifSong=false;
 
 
         //This function will start the game
         //It will initialize all the variables and set the interval
         function Start() {
-            ifSong=false;
             shape = new Object();
             fifty_pointer_loc = new Object();
             if(typeof interval!== 'undefined')
