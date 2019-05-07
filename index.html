@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="icon" href="imgs/icon.jpg">;
 
     <style>
-    }
+    
         
         #header
         {
@@ -1522,7 +1522,10 @@
 
             if(allEaten()){
                 window.clearInterval(interval);
+                song.stop();
+                ifSong = false;
                 window.alert("We have a Winner!!!");
+
             }
 
 
